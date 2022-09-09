@@ -5,5 +5,5 @@ function saveCurrentMonth() {
     document.getElementById("saveCurrentMonthBtn").style.display = "none";
     let monthForHeader = document.getElementById("currentMonth").value;
     document.getElementById("monthHeader").append(monthForHeader);
-    console.log(monthForHeader);
+    $("#monthHeader").append(` <button type="button" class="btn btn-light" id="editCurrentMonthBtn">Edit</button>`);
 };
