@@ -1,5 +1,5 @@
 const monthHeader = document.getElementById('monthHeader');
-const monthInput = document.getElementById('monthInput');
+const monthInputField = document.getElementById('monthInputField');
 const saveMonthInputBtn = document.getElementById('saveMonthInputBtn');
 const editMonthInputBtn = document.getElementById('editMonthInputBtn');
 
