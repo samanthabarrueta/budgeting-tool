@@ -1,9 +1,14 @@
-document.getElementById("saveCurrentMonthBtn").onclick = function () {saveCurrentMonth()};
+const monthHeader = document.getElementById('monthHeader');
+const monthInput = document.getElementById('monthInput');
+const saveMonthInputBtn = document.getElementById('saveMonthInputBtn');
+const editMonthInputBtn = document.getElementById('editMonthInputBtn');
 
-function saveCurrentMonth() {
-    document.getElementById("currentMonth").style.display = "none";
-    document.getElementById("saveCurrentMonthBtn").style.display = "none";
-    let monthForHeader = document.getElementById("currentMonth").value;
-    document.getElementById("monthHeader").append(monthForHeader);
-    $("#monthHeader").append(` <button type="button" class="btn btn-light" id="editCurrentMonthBtn">Edit</button>`);
+const saveCurrentMonth = () => {
+    editMonthInputBtn.style.display = 'block';
+    saveMonthInputBtn.style.display = 'none';
+};
+
+const editCurrentMonth = () => {
+    saveMonthInputBtn.style.display = 'block';
+    editMonthInputBtn.style.display = 'none';
 };
