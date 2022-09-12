@@ -7,8 +7,8 @@ const editMonthInputBtn = document.getElementById('editMonthInputBtn');
 const incomeLabel = document.getElementById('incomeLabel');
 const incomeInputValue = document.getElementById('incomeInputValue');
 const incomeInputField = document.getElementById('incomeInputField');
-const saveincomeInputBtn = document.getElementById('saveincomeInputBtn');
-const editincomeInputBtn = document.getElementById('editincomeInputBtn');
+const saveIncomeInputBtn = document.getElementById('saveIncomeInputBtn');
+const editIncomeInputBtn = document.getElementById('editIncomeInputBtn');
 
 
 const saveCurrentMonth = () => {
@@ -29,8 +29,8 @@ const editCurrentMonth = () => {
 };
 
 const saveCurrentincome = () => {
-    editincomeInputBtn.style.display = 'block';
-    saveincomeInputBtn.style.display = 'none';
+    editIncomeInputBtn.style.display = 'block';
+    saveIncomeInputBtn.style.display = 'none';
     let incomeInput = document.getElementById('incomeInputField').value;
     incomeInputValue.style.display = 'inline-block';
     incomeInputField.style.display = 'none';
@@ -38,9 +38,8 @@ const saveCurrentincome = () => {
 };
 
 const editCurrentincome = () => {
-    saveincomeInputBtn.style.display = 'inline-block';
-    editincomeInputBtn.style.display = 'none';
+    saveIncomeInputBtn.style.display = 'inline-block';
+    editIncomeInputBtn.style.display = 'none';
     incomeInputField.style.display = 'inline-block';
     incomeInputValue.style.display = 'none';
 };
-

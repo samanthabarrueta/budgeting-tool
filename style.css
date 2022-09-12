@@ -5,3 +5,11 @@
 #editMonthInputBtn {
     display: none;
 }
+
+#saveIncomeInputBtn {
+    display: block;
+}
+
+#editIncomeInputBtn {
+    display: none;
+}
